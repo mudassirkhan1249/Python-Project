@@ -15,7 +15,7 @@ def csv_generator():
     rows = int(input("How many rows you want in your data. enter here --> ".title()))
 
     with open(file_name, 'w') as f:
-        f.write("name, age, designation, education, martial status")
+        f.write("name,age,designation,education,martial_status")
 
     with open(file_name, 'a') as g:
         print('Working.......')
@@ -31,7 +31,7 @@ def csv_generator():
             if desg == "Doctor" or edu == "MBBS":
                 edu = "MBBS"
                 desg = "Doctor"
-            g.write(f"\n{name}, {ag}, {desg}, {edu}, {marsta}")
+            g.write(f"\n{name},{ag},{desg},{edu},{marsta}")
 
     print("Data Generated Successfully")
 
